@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSSVTSSOutGoingCallViewController">
+            <connections>
+                <outlet property="handsFreeBtn" destination="pWk-3O-6UN" id="NLB-eR-17v"/>
+                <outlet property="hangUpBtn" destination="kui-ny-qaB" id="FmF-c7-SMT"/>
+                <outlet property="muteBtn" destination="AZS-vy-ybL" id="7X0-VC-wWn"/>
+                <outlet property="nameLabel" destination="vIm-kd-CCK" id="Qcg-3Y-OX4"/>
+                <outlet property="playWindow" destination="xg3-Hc-pkS" id="k87-4r-3ga"/>
+                <outlet property="timeLabel" destination="bK5-WX-qwN" id="Bhc-GJ-Kkz"/>
+                <outlet property="view" destination="HCh-St-rpK" id="QLI-yb-hHp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="HCh-St-rpK">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video_intercom_default_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="t2F-WV-Kyp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIm-kd-CCK">
+                    <rect key="frame" x="30" y="40" width="315" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Kej-bf-XKb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bK5-WX-qwN">
+                    <rect key="frame" x="30" y="80" width="315" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="JWh-qz-C6d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZS-vy-ybL" customClass="DSSCallButton">
+                    <rect key="frame" x="10" y="422" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Laf-dm-0wi"/>
+                        <constraint firstAttribute="width" constant="100" id="StB-52-pJe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" image="hujiao_jingyin_nor.png"/>
+                    <state key="selected" image="hujiao_jingyindakai_nor.png"/>
+                    <state key="highlighted" image="hujiao_jingyin_hov.png">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kui-ny-qaB" customClass="DSSCallButton">
+                    <rect key="frame" x="132.5" y="537" width="110" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="aXf-Gs-bUp"/>
+                        <constraint firstAttribute="height" constant="110" id="eMo-iX-TvV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" image="video_intercom_refuse_nor.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="video_intercom_refuse_hov.png">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWk-3O-6UN" customClass="DSSCallButton">
+                    <rect key="frame" x="265" y="422" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="9V0-sX-0Vu"/>
+                        <constraint firstAttribute="height" constant="100" id="kUd-Qs-YmD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" image="hujiao_miant_nor.png"/>
+                    <state key="selected" image="hujiao_miantdakai_nor.png"/>
+                    <state key="highlighted" image="hujiao_miant_hov.png">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xg3-Hc-pkS" customClass="DHMediaPlayView" customModule="DHMediaPlay">
+                    <rect key="frame" x="0.0" y="126" width="375" height="281.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="bK5-WX-qwN" firstAttribute="top" secondItem="vIm-kd-CCK" secondAttribute="bottom" id="5nn-DT-Keo"/>
+                <constraint firstItem="vIm-kd-CCK" firstAttribute="leading" secondItem="HCh-St-rpK" secondAttribute="leading" constant="30" id="9Rd-65-b9Z"/>
+                <constraint firstAttribute="bottom" secondItem="kui-ny-qaB" secondAttribute="bottom" constant="20" id="B4s-hh-PRz"/>
+                <constraint firstAttribute="trailing" secondItem="pWk-3O-6UN" secondAttribute="trailing" constant="10" id="C3M-1b-aPt"/>
+                <constraint firstAttribute="trailing" secondItem="bK5-WX-qwN" secondAttribute="trailing" constant="30" id="Fy6-TS-VNs"/>
+                <constraint firstItem="kui-ny-qaB" firstAttribute="top" secondItem="pWk-3O-6UN" secondAttribute="bottom" constant="15" id="HNk-a8-dG4"/>
+                <constraint firstAttribute="bottom" secondItem="t2F-WV-Kyp" secondAttribute="bottom" id="Ihd-CE-7cy"/>
+                <constraint firstItem="AZS-vy-ybL" firstAttribute="leading" secondItem="HCh-St-rpK" secondAttribute="leading" constant="10" id="Lqg-gC-Ob7"/>
+                <constraint firstAttribute="width" secondItem="xg3-Hc-pkS" secondAttribute="height" multiplier="4:3" id="XFs-3z-f5C"/>
+                <constraint firstItem="xg3-Hc-pkS" firstAttribute="leading" secondItem="HCh-St-rpK" secondAttribute="leading" id="dLn-sa-uew"/>
+                <constraint firstItem="kui-ny-qaB" firstAttribute="top" secondItem="AZS-vy-ybL" secondAttribute="bottom" constant="15" id="dXS-Yt-vSc"/>
+                <constraint firstAttribute="trailing" secondItem="xg3-Hc-pkS" secondAttribute="trailing" id="dge-TV-tev"/>
+                <constraint firstAttribute="trailing" secondItem="vIm-kd-CCK" secondAttribute="trailing" constant="30" id="flT-Zu-gaz"/>
+                <constraint firstItem="xg3-Hc-pkS" firstAttribute="top" secondItem="bK5-WX-qwN" secondAttribute="bottom" constant="10" id="iIN-SO-ggh"/>
+                <constraint firstAttribute="trailing" secondItem="t2F-WV-Kyp" secondAttribute="trailing" id="o1E-uH-veB"/>
+                <constraint firstItem="t2F-WV-Kyp" firstAttribute="leading" secondItem="HCh-St-rpK" secondAttribute="leading" id="o5l-5J-xuf"/>
+                <constraint firstItem="kui-ny-qaB" firstAttribute="centerX" secondItem="HCh-St-rpK" secondAttribute="centerX" id="oHt-Z5-qQz"/>
+                <constraint firstItem="t2F-WV-Kyp" firstAttribute="top" secondItem="HCh-St-rpK" secondAttribute="top" id="pKE-pa-gpX"/>
+                <constraint firstItem="bK5-WX-qwN" firstAttribute="leading" secondItem="HCh-St-rpK" secondAttribute="leading" constant="30" id="xmG-ai-48Z"/>
+                <constraint firstItem="vIm-kd-CCK" firstAttribute="top" secondItem="HCh-St-rpK" secondAttribute="top" constant="40" id="xwJ-LE-Xtq"/>
+            </constraints>
+            <point key="canvasLocation" x="135" y="155"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hujiao_jingyin_hov.png" width="72" height="72"/>
+        <image name="hujiao_jingyin_nor.png" width="72" height="72"/>
+        <image name="hujiao_jingyindakai_nor.png" width="72" height="72"/>
+        <image name="hujiao_miant_hov.png" width="72" height="72"/>
+        <image name="hujiao_miant_nor.png" width="72" height="72"/>
+        <image name="hujiao_miantdakai_nor.png" width="72" height="72"/>
+        <image name="video_intercom_default_bg.png" width="320" height="568"/>
+        <image name="video_intercom_refuse_hov.png" width="72" height="72"/>
+        <image name="video_intercom_refuse_nor.png" width="72" height="72"/>
+    </resources>
+</document>

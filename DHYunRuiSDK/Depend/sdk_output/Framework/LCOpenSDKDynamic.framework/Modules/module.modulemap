@@ -1,0 +1,7 @@
+framework module LCOpenSDKDynamic {
+  umbrella header "LCOpenSDK_dynamic.h"
+
+  export *
+  module * { export * }
+
+}

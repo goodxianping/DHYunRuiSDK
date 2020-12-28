@@ -1,0 +1,6 @@
+framework module RtpOUdp_dynamic {
+  umbrella header "RtpOUdp_dynamic.h"
+
+  export *
+  module * { export * }
+}

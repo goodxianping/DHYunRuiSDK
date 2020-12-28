@@ -1,0 +1,11 @@
+framework module DHMediaPlay {
+  umbrella header "DHMediaPlay-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module DHMediaPlay.Swift {
+    header "DHMediaPlay-Swift.h"
+    requires objc
+}

@@ -1,0 +1,6 @@
+framework module SipStream_dynamic {
+  umbrella header "SipStream_dynamic.h"
+
+  export *
+  module * { export * }
+}

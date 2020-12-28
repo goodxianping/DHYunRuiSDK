@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'DHYunRuiSDK_Example' do
+  pod 'DHYunRuiSDK', :path => '../'
+  pod 'MBProgressHUD'
+  pod 'ReactiveObjC','3.0.0'
+  pod 'IQKeyboardManager'
+#  pod 'ToastBridge'
+end
+pre_install do |installer|
+    def installer.verify_no_static_framework_transitive_dependencies; end
+end

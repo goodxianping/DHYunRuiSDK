@@ -1,0 +1,6 @@
+framework module dhsdk {
+  umbrella header "dhsdk.h"
+
+  export *
+  module * { export * }
+}

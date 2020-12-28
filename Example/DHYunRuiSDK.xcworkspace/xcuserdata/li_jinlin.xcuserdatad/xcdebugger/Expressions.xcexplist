@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[DHViewController registerAction:]:DHViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[DHCallManager cscEventInvite:]:DHCallManager.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[DSSCallViewModule queryChannelInfo:resume:callback:]:DSSCallViewModule.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[DSSCallViewModule getCameraFromChannelInfo:]:DSSCallViewModule.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "rtCamera.channelNo">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

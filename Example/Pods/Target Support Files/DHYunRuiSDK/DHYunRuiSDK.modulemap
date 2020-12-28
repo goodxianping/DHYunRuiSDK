@@ -1,0 +1,6 @@
+framework module DHYunRuiSDK {
+  umbrella header "DHYunRuiSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

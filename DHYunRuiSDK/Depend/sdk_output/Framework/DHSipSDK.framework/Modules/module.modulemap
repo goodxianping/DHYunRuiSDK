@@ -1,0 +1,6 @@
+framework module DHSipSDK {
+  umbrella header "DHSipSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

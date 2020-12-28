@@ -1,0 +1,6 @@
+framework module SipStackComponent {
+  umbrella header "SipStackComponent.h"
+
+  export *
+  module * { export * }
+}

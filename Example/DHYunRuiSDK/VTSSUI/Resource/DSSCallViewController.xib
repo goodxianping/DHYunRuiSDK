@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSSCallViewController">
+            <connections>
+                <outlet property="agreeButton" destination="4g2-ei-dkz" id="lso-y6-zUV"/>
+                <outlet property="authButton" destination="2aG-ed-n58" id="TLP-RZ-8Yj"/>
+                <outlet property="bgImageView" destination="vQG-Dt-IRg" id="S9A-O7-hNl"/>
+                <outlet property="deviceNameLabel" destination="mMM-db-Pry" id="zx4-G8-0kn"/>
+                <outlet property="exchagneButton" destination="30U-8Q-fA6" id="h23-st-DvA"/>
+                <outlet property="handsFreeButton" destination="hX3-ib-4Oj" id="GrH-1l-wo7"/>
+                <outlet property="incommingLabel" destination="tJr-Qv-uTY" id="CZa-Vq-nKm"/>
+                <outlet property="loadingVideoLabel" destination="lZZ-Nl-uF7" id="Hr6-vE-aJc"/>
+                <outlet property="muteButton" destination="9bu-ru-emZ" id="iyk-w5-78s"/>
+                <outlet property="openDoorButton" destination="aOC-0V-Ifk" id="iuo-ca-Yzs"/>
+                <outlet property="playWindow" destination="DXs-ME-4i5" id="Lb4-xv-jIH"/>
+                <outlet property="refuseButton" destination="3q7-BR-KsO" id="1He-Hs-D3G"/>
+                <outlet property="stopButton" destination="peB-av-FEg" id="3ZP-WA-6My"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video_intercom_default_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="vQG-Dt-IRg">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8888001" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMM-db-Pry">
+                    <rect key="frame" x="20" y="40" width="374" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="zQe-lB-yDQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aaaa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJr-Qv-uTY">
+                    <rect key="frame" x="157" y="85" width="100" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="5oZ-D6-1ei"/>
+                        <constraint firstAttribute="width" constant="100" id="wcz-Xz-acU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXs-ME-4i5" customClass="DHMediaPlayView" customModule="DHMediaPlay">
+                    <rect key="frame" x="0.0" y="115" width="414" height="233"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="DXs-ME-4i5" secondAttribute="height" multiplier="16:9" id="jZR-Qy-fQy"/>
+                    </constraints>
+                </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请求视频中..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZZ-Nl-uF7">
+                    <rect key="frame" x="107" y="215" width="200" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="V61-mp-shx"/>
+                        <constraint firstAttribute="width" constant="200" id="qrQ-Zd-APt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hidden" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="7KT-Pg-7bA">
+                    <rect key="frame" x="10.666666666666657" y="766" width="393" height="110"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtJ-dN-D4k">
+                            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3q7-BR-KsO" customClass="DSSCallButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" image="video_intercom_refuse_nor.png"/>
+                                    <state key="highlighted" image="video_intercom_refuse_hov.png">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peB-av-FEg" customClass="DSSCallButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" image="video_intercom_refuse_nor.png"/>
+                                    <state key="highlighted" image="video_intercom_refuse_hov.png">
+                                        <color key="titleColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="3q7-BR-KsO" secondAttribute="bottom" id="4dt-7m-89X"/>
+                                <constraint firstAttribute="width" constant="110" id="GaY-Rv-3Tx"/>
+                                <constraint firstAttribute="trailing" secondItem="3q7-BR-KsO" secondAttribute="trailing" id="HuZ-D8-mOV"/>
+                                <constraint firstItem="peB-av-FEg" firstAttribute="leading" secondItem="dtJ-dN-D4k" secondAttribute="leading" id="L24-rP-pv0"/>
+                                <constraint firstAttribute="trailing" secondItem="peB-av-FEg" secondAttribute="trailing" id="MmH-fg-TGP"/>
+                                <constraint firstAttribute="height" constant="110" id="SfA-L9-2Nt"/>
+                                <constraint firstItem="3q7-BR-KsO" firstAttribute="top" secondItem="dtJ-dN-D4k" secondAttribute="top" id="Xea-yZ-HCZ"/>
+                                <constraint firstItem="3q7-BR-KsO" firstAttribute="leading" secondItem="dtJ-dN-D4k" secondAttribute="leading" id="nhG-dk-6vj"/>
+                                <constraint firstAttribute="bottom" secondItem="peB-av-FEg" secondAttribute="bottom" id="qMJ-d7-MNN"/>
+                                <constraint firstItem="peB-av-FEg" firstAttribute="top" secondItem="dtJ-dN-D4k" secondAttribute="top" id="vtG-bo-mHI"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QU0-QR-Btg">
+                            <rect key="frame" x="141.33333333333334" y="0.0" width="110" height="110"/>
+                            <subviews>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aG-ed-n58" customClass="DSSCallButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="110" id="vV1-YK-jxZ"/>
+                                        <constraint firstAttribute="width" constant="110" id="yiJ-q3-vRM"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" image="hujiao_shouquan.png"/>
+                                    <state key="highlighted">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOC-0V-Ifk" customClass="DSSCallButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="110" id="0XL-u9-lyK"/>
+                                        <constraint firstAttribute="width" constant="110" id="GBW-aE-GGj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" image="hujiao_kaisuo_nor.png"/>
+                                    <state key="highlighted" image="hujiao_kaisuo_hov.png">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="110" id="5pY-f0-NPI"/>
+                                <constraint firstItem="2aG-ed-n58" firstAttribute="centerX" secondItem="QU0-QR-Btg" secondAttribute="centerX" id="Ghl-Yc-P8Q"/>
+                                <constraint firstItem="aOC-0V-Ifk" firstAttribute="centerX" secondItem="QU0-QR-Btg" secondAttribute="centerX" id="Ugf-PQ-Ax2"/>
+                                <constraint firstItem="2aG-ed-n58" firstAttribute="centerY" secondItem="QU0-QR-Btg" secondAttribute="centerY" id="bM5-C9-D0B"/>
+                                <constraint firstAttribute="height" constant="110" id="dsb-KK-Ibb"/>
+                                <constraint firstItem="aOC-0V-Ifk" firstAttribute="centerY" secondItem="QU0-QR-Btg" secondAttribute="centerY" id="zq2-PL-3y5"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4g2-ei-dkz" customClass="DSSCallButton">
+                            <rect key="frame" x="283" y="0.0" width="110" height="110"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="110" id="768-4b-r4u"/>
+                                <constraint firstAttribute="width" constant="110" id="CXl-aW-ENy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" image="video_intercom_answer_nor.png"/>
+                            <state key="highlighted" image="video_intercom_answer_hov.png">
+                                <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="W77-h0-gD0">
+                    <rect key="frame" x="15.666666666666657" y="646" width="383" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bu-ru-emZ" customClass="DSSCallButton">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="tXK-6g-FBB"/>
+                                <constraint firstAttribute="height" constant="100" id="tZ6-va-Axw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" image="hujiao_jingyin_nor.png"/>
+                            <state key="selected" image="hujiao_jingyindakai_nor.png"/>
+                            <state key="highlighted" image="hujiao_jingyin_hov.png">
+                                <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hX3-ib-4Oj" customClass="DSSCallButton">
+                            <rect key="frame" x="141.33333333333334" y="0.0" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="0fR-YW-yue"/>
+                                <constraint firstAttribute="width" constant="100" id="dPl-BK-0Zl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" image="hujiao_miant_nor.png"/>
+                            <state key="selected" image="hujiao_miantdakai_nor.png"/>
+                            <state key="highlighted" image="hujiao_miant_hov.png">
+                                <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30U-8Q-fA6" customClass="DSSCallButton">
+                            <rect key="frame" x="283" y="0.0" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="fFv-L4-ZPO"/>
+                                <constraint firstAttribute="width" constant="100" id="uJY-5N-CFI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" image="hujiao_yuyinjieting_nor.png"/>
+                            <state key="highlighted" image="hujiao_yuyinjieting_hov.png">
+                                <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7KT-Pg-7bA" secondAttribute="trailing" constant="10.5" id="033-tK-wF3"/>
+                <constraint firstItem="7KT-Pg-7bA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3Yh-4u-giB"/>
+                <constraint firstAttribute="trailing" secondItem="W77-h0-gD0" secondAttribute="trailing" constant="15.5" id="3iu-TJ-uH2"/>
+                <constraint firstItem="tJr-Qv-uTY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CsA-Zl-gNU"/>
+                <constraint firstItem="mMM-db-Pry" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Dro-2d-Syj"/>
+                <constraint firstItem="7KT-Pg-7bA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10.5" id="HYI-Wg-lzE"/>
+                <constraint firstItem="DXs-ME-4i5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="115" id="Iy1-oO-Idf"/>
+                <constraint firstItem="7KT-Pg-7bA" firstAttribute="top" secondItem="W77-h0-gD0" secondAttribute="bottom" constant="20" id="KMU-YB-CVW"/>
+                <constraint firstItem="tJr-Qv-uTY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="85" id="KqH-Hi-U9e"/>
+                <constraint firstAttribute="trailing" secondItem="mMM-db-Pry" secondAttribute="trailing" constant="20" id="O2H-IQ-LqS"/>
+                <constraint firstAttribute="trailing" secondItem="vQG-Dt-IRg" secondAttribute="trailing" id="QjV-3T-qBD"/>
+                <constraint firstAttribute="trailing" secondItem="DXs-ME-4i5" secondAttribute="trailing" id="dFd-bG-V7q"/>
+                <constraint firstItem="W77-h0-gD0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ek3-WG-cWK"/>
+                <constraint firstItem="lZZ-Nl-uF7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gKT-rU-k47"/>
+                <constraint firstItem="W77-h0-gD0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15.5" id="jJN-2z-UzF"/>
+                <constraint firstItem="lZZ-Nl-uF7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="215" id="kHm-z8-vfY"/>
+                <constraint firstItem="mMM-db-Pry" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="nO7-A2-w5A"/>
+                <constraint firstItem="DXs-ME-4i5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rwP-Tr-ngg"/>
+                <constraint firstAttribute="bottom" secondItem="7KT-Pg-7bA" secondAttribute="bottom" constant="20" id="s3i-eb-pf9"/>
+                <constraint firstItem="vQG-Dt-IRg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sal-qk-0tC"/>
+                <constraint firstItem="vQG-Dt-IRg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wQQ-vE-I0Y"/>
+                <constraint firstAttribute="bottom" secondItem="vQG-Dt-IRg" secondAttribute="bottom" id="woj-YK-oIU"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hujiao_jingyin_hov.png" width="72" height="72"/>
+        <image name="hujiao_jingyin_nor.png" width="72" height="72"/>
+        <image name="hujiao_jingyindakai_nor.png" width="72" height="72"/>
+        <image name="hujiao_kaisuo_hov.png" width="72" height="72.333335876464844"/>
+        <image name="hujiao_kaisuo_nor.png" width="72" height="72.333335876464844"/>
+        <image name="hujiao_miant_hov.png" width="72" height="72"/>
+        <image name="hujiao_miant_nor.png" width="72" height="72"/>
+        <image name="hujiao_miantdakai_nor.png" width="72" height="72"/>
+        <image name="hujiao_shouquan.png" width="72" height="72.333335876464844"/>
+        <image name="hujiao_yuyinjieting_hov.png" width="72" height="72"/>
+        <image name="hujiao_yuyinjieting_nor.png" width="72" height="72"/>
+        <image name="video_intercom_answer_hov.png" width="72" height="72"/>
+        <image name="video_intercom_answer_nor.png" width="72" height="72.333335876464844"/>
+        <image name="video_intercom_default_bg.png" width="320" height="568"/>
+        <image name="video_intercom_refuse_hov.png" width="72" height="72"/>
+        <image name="video_intercom_refuse_nor.png" width="72" height="72.333335876464844"/>
+    </resources>
+</document>
