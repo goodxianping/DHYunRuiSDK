@@ -21,22 +21,24 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/starryKey/DHYunRuiSDK'
+  s.homepage         = 'https://github.com/goodxianping/DHYunRuiSDK.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'starryKey' => '1056838379@qq.com' }
-  s.source           = { :git => 'https://github.com/starryKey/DHYunRuiSDK.git', :tag => s.version.to_s }
+  s.author           = { 'ganqixian' => 'ganqixian@gxliujin.com' }
+  s.source           = { :git => 'https://github.com/goodxianping/DHYunRuiSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
   s.vendored_frameworks ='DHYunRuiSDK/Depend/sdk_output/Framework/*.framework'
   s.frameworks = "VideoToolbox", "AudioToolbox", "CoreMedia"
-#  s.libraries = "stdc++.6.0.9", "c++", "iconv", "z","resolv",'xml2'
-  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'false','CLANG_CXX_LIBRARY' => "libstdc++",'CLANG_WARN_DOCUMENTATION_COMMENTS' => 'NO','OTHER_LDFLAGS' => '-ObjC -all_load'}
+  #s.libraries = "stdc++.6.0.9", "c++", "iconv", "z","resolv",'xml2'
+
+  s.info_plist = { 'CFBundleIdentifier' => 'com.gxlj.DHYunRuiSDK' }
+  s.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'com.gxlj.DHYunRuiSDK','ENABLE_BITCODE' => 'false','CLANG_CXX_LIBRARY' => "libstdc++",'CLANG_WARN_DOCUMENTATION_COMMENTS' => 'NO','OTHER_LDFLAGS' => '-ObjC -all_load','VALID_ARCHS[sdk=iphonesimulator*]' => ''}
   
   s.resources = 'DHYunRuiSDK/Depend/sdk_output/Bundle/*.bundle'
-  s.public_header_files = 'DHYunRuiSDK/Depend/sdk_output/Headers/**/*.h'
-  s.source_files = 'DHYunRuiSDK/Depend/sdk_output/Headers/**/*.h'
+  #s.public_header_files = 'DHYunRuiSDK/Depend/sdk_output/Headers/**/*.h'
+  #s.source_files = 'DHYunRuiSDK/Depend/sdk_output/Headers/**/*.h'
   
   s.dependency 'AFNetworking'
   
