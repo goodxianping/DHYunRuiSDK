@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AFNetworking/AFNetworking.h>
 
 typedef void(^successBlock)(id data);
 typedef void(^failBlock)(NSError* error);
